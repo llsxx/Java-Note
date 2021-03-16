@@ -56,7 +56,7 @@ clazz.getClassLoader() 可以获得当前类的加载器类型
 >
 > 运行原理：栈帧
 
-<img src="jvm.assets/image-20201210155405312.png" alt="image-20201210155405312" style="zoom:50%;" />
+<img src="image/image-20201210155405312.png" alt="image-20201210155405312" style="zoom:50%;" />
 
 ### 堆
 
@@ -97,9 +97,9 @@ GC垃圾回收，主要在伊甸区和养老区
  + -Xms1m -Xmx8m -XX:+HeapDumpOnOutOfMemoryError   
 
    	+ -Xms 设置初始化内存分配大小 ，默认1/64
-      	+ -Xmx 设置最大分配内存，默认1/4
-   	+ -XX:+PrintGCDetails  打印gc垃圾回收信息
-   	+ -XX:+HeapDumpOnOutOfMemoryError   输出错误文件
+    + -Xmx 设置最大分配内存，默认1/4
+   + -XX:+PrintGCDetails  打印gc垃圾回收信息
+   + -XX:+HeapDumpOnOutOfMemoryError   输出错误文件
 
    > ```java
    > //默认情况下，分配的堆总内存 是电脑内存的1/4，而初始化的内存是1/64

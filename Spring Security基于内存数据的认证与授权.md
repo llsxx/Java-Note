@@ -57,7 +57,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginProcessingUrl("/doLogin")
+                .loginProcessingUrl("/doLogin")   //登录请求路径
                 .loginPage("/login")
                 .usernameParameter("uname")
                 .passwordParameter("passwd")
@@ -122,7 +122,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-### 基于数据数数据的认证与授权
+### 基于数据库的认证与授权
 
 ![image-20201214204930282](C:%5CUsers%5C%E5%B0%8F%E6%98%9F%E6%98%9F%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201214204930282.png)
 
