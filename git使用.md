@@ -14,7 +14,7 @@
 
  
 
-### 二、工作目录、暂存区以及版本库
+### 二、工作区、暂存区以及版本库
 
 版本库：.git隐藏文件夹就是版本库，版本库中存储了很多配置信息、日志信息和文件版本信息等
 
@@ -154,4 +154,25 @@ git log（q退出）
    git config user.name
 
 通过上面的命令设置的信息会保存在~/.gitconfig文件中
+
+### 五、github创建仓库
+
+#### 1.create a new repository on the command line
+
+```
+git init
+git add README.m d
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/llsxx/Demo.git
+git push -u origin master
+```
+
+#### 2.push an existing repository from the command line
+
+```
+git remote add origin https://github.com/llsxx/Demo.git
+git branch -M master
+git push -u origin master
+```
 
